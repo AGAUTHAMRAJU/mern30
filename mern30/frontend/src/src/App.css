@@ -1,0 +1,234 @@
+/* App.css */
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+
+  ul {
+    background-color: #65818d;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* flex-direction: row-reverse; */
+justify-content: flex-end;
+}
+#title{
+  background-color: #65818d;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title span{
+  font-size: 22px;
+  
+}
+
+  ul li {
+  display: inline;
+  margin: 10px;
+}
+li {
+  color: #5a3f3f;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+
+  ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content area styles */
+.App {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container-home{
+  padding:20px 60px 60px 60px;
+}
+.parent{
+height:calc( 100vh - 142px);
+  display: flex;
+}
+.container{
+  margin:auto;
+  
+}
+body{
+  background-image: url(https://images.unsplash.com/photo-1711381712581-81a70ab44380?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxM3x8fGVufDB8fHx8fA%3D%3D);
+  overflow-y: hidden;
+  background-size: cover;
+  font-family: sans-serif;
+
+}
+
+ ::-webkit-scrollbar {
+  height:0;
+  width:0;
+} 
+body {
+  margin:0;
+  /* background:#efefff; */
+  font-family: sans-serif;
+}
+* {
+  scroll-behavior: smooth;
+}
+.container-ch {
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  height:100vh;
+  gap:4px;
+}
+.container-ch header {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:16px 32px;
+  margin:0;
+  padding:0;
+  cursor: pointer;
+  background:#ffffff;
+}
+
+.container-ch header menu {
+  display:flex;
+  flex-direction: row;
+  margin:0;
+}
+.container-ch header menu  li {
+  list-style-type: none;
+  cursor: pointer;
+  padding:8px;
+  border-radius: 8px;
+}
+.container-ch header menu  li:hover,.container-ch header menu li.active {
+  background:#efefff;
+  color:#8888ff;
+}
+
+#title ul li:hover,
+#title ul li.active {
+  color: black;
+  background-color: #000000;
+}
+
+
+#main-ch {
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  flex:1;
+  gap:4px;
+}
+#main-ch #sidebar-ch {
+  display: flex;
+  flex-direction: column;
+  height:calc(100vh - 38px);
+}
+#sidebar-ch {
+  background:#ffffff;
+  width:280px;
+  justify-content: space-between;
+}
+#sidebar-ch menu {
+  display:flex;
+  flex-direction: column;
+  margin:0;
+  padding:0;
+  margin-top: 32px;
+}
+#sidebar-ch li {
+  padding:8px 32px;
+  list-style-type: none;
+  cursor: pointer;
+}
+#sidebar-ch li:hover,#sidebar-ch li.active {
+  color:#8888ff;
+  background:#efefff;
+}
+#lo-ch {
+  margin-bottom: 16px;
+  margin-left: 30px;
+  text-decoration: none;
+}
+#content-ch {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:100%;
+  gap:16px;
+  padding:32px;
+  overflow-y: auto;
+  height:calc(100vh - 97px);
+}
+#content-ch #blocks-ch {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width:calc(100% - 64px);
+  gap:16px;
+  padding:32px;
+  overflow-y: auto;
+  height: calc(100vh - 35px);
+}
+#content-ch #blocks-ch .block {
+  display: flex;
+  flex-direction: column;
+  background:#ffffff;
+  width:480px;
+  padding:16px 32px;
+  gap:10px;
+}
+#content-ch #blocks-ch .block h4,#content-ch .block p {
+  margin:0;
+  padding:0;
+}
+#content-ch #blocks-ch .block.left {
+  align-self: flex-start;
+  border-top-right-radius: 32px;
+  border-bottom-right-radius: 32px;
+}
+#content-ch #blocks-ch .block.right {
+  align-self: flex-end;
+  border-top-left-radius: 32px;
+  border-bottom-left-radius: 32px;
+  background:#333333;
+  color:#ffffff;
+}
+#content-ch #msgbox-ch {
+  width:calc(100% - 64px);
+  background:white;
+  padding:20px 64px;
+  margin:-32px -64px;
+  display:flex;
+  flex-direction: row;
+  gap:16px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+}
+#content-ch #msgbox-ch input {
+  width:100%;
+  padding:16px;
+  background:#efefff;
+  border:none;
+  border-radius: 8px;
+  font-size: medium;
+}
+#content-ch #msgbox-ch button {
+  padding:16px;
+  background:#8888ff;
+  color:#ffffff;
+  border:none;
+  border-radius: 8px;
+  font-size: medium;
+}
+::-webkit-scrollbar {
+  height:0;
+  width:0;
+}
